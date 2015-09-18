@@ -8,10 +8,23 @@ public class ReverseString {
 		
 		//Input String
 		System.out.println("Enter the String: \t");
-		String str = s.nextLine();
-		char[] charArr = str.toCharArray();
+		StringBuffer str = new StringBuffer(s.nextLine());
+		//char[] charArr = str.toCharArray();
 		char t;
 		
+		System.out.println(str.reverse());
+		System.out.println(str);
+		/*
+		for(int i=0, j=str.length() - 1; i<=str.length()/2; i++, j--)
+		{
+			t=str.charAt(i);
+			str.setCharAt(i, str.charAt(j));
+			str.setCharAt(j, t);
+			
+		}
+		*/
+		
+		/*
 		//Reversing String
 		for(int i=0, j=str.length() - 1; i<=str.length()/2; i++, j--)
 		{
@@ -26,6 +39,7 @@ public class ReverseString {
 			System.out.print(charArr[x]);
 		}
 		
+		*/
 	}
 
 }
